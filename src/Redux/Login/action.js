@@ -26,7 +26,7 @@ export const login=(payload)=>(dispatch)=>{
     dispatch(loginLoading());
 
     // console.log(payload,'from payload action');
-    axios.post(`http://localhost:5000/api/user/login`,payload)
+    axios.post(`https://amir-project.herokuapp.com/api/user/login`,payload)
     .then((res)=>{
         // console.log(res,"action")
         dispatch(loginSuccess({token:res.data.token}))

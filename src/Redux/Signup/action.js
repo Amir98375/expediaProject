@@ -21,7 +21,7 @@ export const signupFailure=()=>({
 export const registerUser=(payload)=>(dispatch)=>{
     dispatch(signupLoading());
     console.log('signup',payload);
-    axios.post("http://localhost:5000/api/user/register",payload)
+    axios.post("https://amir-project.herokuapp.com/api/user/register",payload)
     .then((res)=>{
         dispatch(signupSuccess());
         console.log('ok');

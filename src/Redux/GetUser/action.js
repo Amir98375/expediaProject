@@ -7,7 +7,7 @@ export const userSuccess=(payload)=>({
 
 export const getUser=(token,dispatch)=>{
     // console.log(token)
-    axios.get(`http://localhost:5000/api/user/loggeduser`,{
+    axios.get(`https://amir-project.herokuapp.com/api/user/loggeduser`,{
         headers:{
             "Authorization" : `Bearer ${token}`
         }

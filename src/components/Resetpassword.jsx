@@ -27,7 +27,7 @@ export const ResetPassword=()=>{
       "password":password,
       "password_confirmation":cpassword
     }
-    axios.post("http://localhost:5000/api/user/changepassword",{
+    axios.post("https://amir-project.herokuapp.com/api/user/changepassword",{
       body:JSON.stringify(data),
       headers:{
         "Authorization" : `Bearer ${token}`
