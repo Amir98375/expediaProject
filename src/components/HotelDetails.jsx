@@ -173,7 +173,7 @@ display={"flex"}>
 </Box>
 <Box as={"div"} display={"flex"} justifyContent={"space-around"}>
     <Heading>₹{p3}</Heading> <Button backgroundColor={"blue"}
-       color={"white"} mt={"10px"} onClick={Navigate('expedia.com')} >Reserve</Button>
+       color={"white"} mt={"10px"}>Reserve</Button>
     </Box>
 
    </Box>
