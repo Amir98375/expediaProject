@@ -22,7 +22,7 @@ export const ResetPassword=()=>{
  const {token}  = useSelector((s)=>s.login);
  const navigate = useNavigate();
   const handleReset = ()=>{
-    console.log(password,cpassword)
+    // console.log(password,cpassword)
     const data  = {
       "password":password,
       "password_confirmation":cpassword
@@ -43,7 +43,7 @@ export const ResetPassword=()=>{
     })
   }
 
-  console.log(token)
+  // console.log(token)
     return (
         <Box>
              <Flex

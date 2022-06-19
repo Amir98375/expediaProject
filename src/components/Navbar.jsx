@@ -79,7 +79,7 @@ export const Navbar =()=>{
     dispatch(logout());
    }
 
-   console.log('authenti',user,email,isAuthenticate);
+  //  console.log('authenti',user,email,isAuthenticate);
     return (
      <Box bgColor={"#f8f5f4"}>
          <Box>
@@ -166,7 +166,7 @@ export const Navbar =()=>{
         gap={"3rem"}
         borderRadius={"1rem"} p={"2rem"}
         border={"1px solid grey"}>
-        <Input  width={"40%"} placeholder='Going to'
+        <Input  width={"40%"} placeholder='Going to only for delhi, gujrat, goa route avilable now'
          onChange={(e)=>SetSearchData(e.target.value)}/>
         <Input type={"date"} width={"15%"} placeholder='Check in' marginLeft={"10px"}/>
         <Input type={"date"} width={"15%"} placeholder='Check out'marginLeft={"10px"}/>
