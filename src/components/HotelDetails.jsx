@@ -8,6 +8,7 @@ import {BiArea} from "react-icons/bi"
 import {RiReservedFill} from "react-icons/ri"
 
 import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
+import { Navigate } from 'react-router'
 
 export const HotelDetail=(
   {image1,image2,image3,im1,im2,
@@ -172,7 +173,7 @@ display={"flex"}>
 </Box>
 <Box as={"div"} display={"flex"} justifyContent={"space-around"}>
     <Heading>₹{p3}</Heading> <Button backgroundColor={"blue"}
-       color={"white"} mt={"10px"} >Reserve</Button>
+       color={"white"} mt={"10px"} onClick={Navigate('expedia.com')} >Reserve</Button>
     </Box>
 
    </Box>
